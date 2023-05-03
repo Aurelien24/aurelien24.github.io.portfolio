@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portefolio d'Aurélien Montepin, sa présentation des projets réalisé et son actuelle recherche d'alternance.">
+    <link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bgc-white l-bloc " id="bloc-0">
+   
+        <nav class="navbar row bg-color">
+        
+            <!-- Zone "logo" -->
+            <div class="portfolio">
+                <a href="index.html">Porte-folio</a>
+            </div>
+
+            <!-- Reste menu 
+            <div class="menu-zone">
+                <label for="mobile">Menu ▼</label>
+                <input type="checkbox" name="menu" id="mobile">
+                <ul class="menu" id="menu">
+                    <li class="deroulant"><p class="deroulant">Projet OC</p>
+                        <ul class="sous">
+                            <li><a href="#">Projet 3</a></li>
+                            <li><a href="#">Projet 4</a></li>
+                            <li><a href="#">Projet 5</a></li>
+                            <li><a href="#">Projet 6</a></li>
+                            <li><a href="#">Projet 7</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><p class="deroulant">Projet Diginamic</p>
+                        <ul class="sous">
+                            <li><a href="#">Exercice JAVA</a></li>
+                            <li><a href="#">Exercice Maven</a></li>
+                            <li><a href="#">Projet 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><p class="deroulant">Autre</p>
+                        <ul class="sous">
+                            <li><a href="#">Mon parcourt</a></li>
+                            <li><a href="#">Mini RPG</a></li>
+                            <li><a href="#">Premier site</a></li>
+                            <li><a href="#">Lighthouse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>-->
+            
+        </nav>
+    </header>
+    <div class="paysage flex bg"><!-- Mettre section ? -->
+        <h1>Porte-folio d'Aurélien Montepin</h1>
+        <div class="logo-livre"></div>
+    </div>
+    <div class="presentation  flex bg-color">
+        <div class="introduction">
+            <p>Je suis actuellement en recherche d'alternance dans le cadre d'une formation JAVA (bac+4)</p>
+        </div>
+        <div class="bagage flex">
+            <div class="flex">
+                <img srcset="images/seo-icone.webp 149w,
+                    images/seo-icone.webp 298w"
+                    sizes="(max-width: 768px) 149px, (min-width: 769px) 250px"
+                    alt="Image conseptuel sur la recherche de vectorjuice"
+                    class="img-responsive">
+                <div>
+                    <h2>SEO</h2>
+                    <p>J'aime particulièrement le développement de site internet, c'est ce qui m'as attiré en premier dans le milieu du développement. A ce titre, part intérêt sur le sujet, j'ai notamment complété le cursuse "spécialiste seo" de LinkedIn Learning.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img srcset="images/fusee-icone-petite.webp 149w,
+                     images/fusee-icone.webp 298w"
+                    sizes="(max-width: 768px) 149px, (min-width: 769px) 250px"
+                    alt="Image de fusée de brgfx"
+                    class="img-responsive">
+                <div>
+                    <h2>JAVA</h2>
+                    <p>J'ai débuté le java avec ma formation chez Diginamic. Nous avons réalisé de nombreux exercices pour en comprendre et retenir l'utilisation.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img srcset="images/Java-icone.webp 149w,
+                    images/Java-icone.webp 298w"
+                    sizes="(max-width: 768px) 149px, (min-width: 769px) 250px"
+                    alt="Image de main avec un ordinateur de storyset"
+                    class="img-responsive">
+                <div>
+                    <h2>Java-script</h2>
+                    <p>C'est le premier langage que j'ai utilisé, j'ai réalisé avec un mini rpg a temps perdu ainsi que des serveurs ou des interface web durent ma formation OpenClasseroom.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projets bg">
+        <div>
+            <h2>Mes projets passés</h2>
+            <p>Cliquer sur les vignettes pour lancé la visionneuse.</p>
+            <div>
+                <div onclick="lance(1);">
+                    <h3>Projet 2 d'OC</h3>
+                    <img src="images/p2.webp" class="vignette" id="1">
+                    <p>Je suis partie de la maquette que j’ai reproduit en HTML et CSS.</p>
+                    <p><a href="https://aurelien24.github.io/AurelienMontepin_2_06112020/">Visiter le projet</a></p>
+                </div>
+                <div  onclick="lance(2);">
+                    <h3>Projet 3 d'OC</h3>
+                    <img src="images/p3.webp" class="vignette" id="2">
+                    <p>Il me faillais crée un site dynamique avec des animations CSS.</p>
+                    <p><a href="https://aurelien24.github.io/AurelienMontepin_3_12122020/">Visiter le projet</a></p>
+                </div>
+                <div  onclick="lance(3);">
+                    <h3>Projet 4 d'OC</h3>
+                    <img src="images/p4.webp" class="vignette" id="3">
+                    <p>J’ai dû optimiser un site internet déjà existant.</p>
+                    <p><a href="https://aurelien24.github.io/Project4/">Visiter le projet</a></p>
+                </div>
+                <div  onclick="lance(4);">
+                    <h3>Projet 5 d'OC</h3>
+                    <img src="images/p5.webp" class="vignette" id="4">
+                    <p>Ce projet m'as fait m'exercé sur le frontend en apprenant à utiliser SASS.</p>
+                    <p><a href="https://github.com/Aurelien24/P5_Montepin_Aur-lien">Consulter le projet</a></p>
+                </div>
+                <div  onclick="lance(5);">
+                    <h3>Projet 7 d'OC</h3>
+                    <img src="images/p7.webp" class="vignette" id="5">
+                    <p>Ce projet a consisté a créé un réseau social d'entreprise.</p>
+                    <p><a href="https://github.com/Aurelien24/Projet07">Consulter le projet</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Gestion du JS de la visionneuse d'images
+        let value = 0;
+        let minValue = 1;
+        let maxValue = 5;
+        
+        //let img = document.getElementById(value).src;
+
+        //document.getElementById("imgVisionne").src = img;
+
+        // Récupère l'id de l'image pour déterminé la valeur
+        function lance(nombre){
+            value = nombre;
+            console.log(nombre);
+            console.log(value);
+            let img = document.getElementById(value).src;
+            document.getElementById("imgVisionne").src= img;
+            document.getElementById("visionneuse").style.height= "100vh";
+            console.log("lance");
+
+            // Ligne pour débugage
+            //document.getElementById("value").innerHTML=value;
+        }
+
+        function ferme(){
+            document.getElementById("visionneuse").style.height= "0px";
+        }
+
+        function plus(){
+            if(value < maxValue){
+                value ++;
+            } else {
+                value = minValue;
+            }
+            let img = document.getElementById(value).src;
+            document.getElementById("imgVisionne").src=img;
+
+            // Ligne pour débugage
+            //document.getElementById("value").innerHTML=value;
+        }
+
+        function moins(){
+            if(value > minValue){
+                value --;
+            } else {
+                value = maxValue;
+            }
+            let img = document.getElementById(value).src;
+            document.getElementById("imgVisionne").src=img;
+
+            // Ligne pour débugage
+            //document.getElementById("value").innerHTML=value;
+        }
+    </script>
+    <div id="visionneuse">
+        <div id="coteMoins">
+            <button type="button" onclick="moins();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            </button>
+        </div>
+        <div id="divImgVisionne">
+            <img id="imgVisionne">
+            <p id="value"></p>
+        </div>
+        <div id="cotePlus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" onclick="ferme();" id="ferme"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+
+            <button type="button" onclick="plus();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="bg-color bloc">
+        <h2>C'est parti ?</h2>
+        <div>
+            <p class="italique">
+                "Nouvelles aides à l'embauche d'un jeune alternant pour 2023
+            </p>
+            <p class="italique">
+                À partir de 2023, une nouvelle aide est instaurée. Son montant est égal à 6 000 €. On vous explique comment en bénéficier. À noter que si vous avez bénéficié de l'aide de 2022, elle se poursuit mais n'est pas cumulable."
+            </p>
+            <p><a href="https://entreprendre.service-public.fr/vosdroits/F23556">entreprendre.service-public.fr</a></p>
+            <img>
+        </div>
+    </div>
+    <div class="bloc linkedin bg">
+        <h2>Encore un peut ?</h2>
+        <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7053644648853999616" allowfullscreen="" title="Post intégré" height="500" frameborder="0"></iframe>
+        </div>
+    </div>
+    <footer class="flex bg-color">
+        <div>
+            <h2>Contactez-moi</h2>
+            <p>
+                Email : <a herf="mailto:a.montepin@yahoo.com">a.montepin@yahoo.com</a><br>
+                Téléphone : <a herf="tel:+33641914116">06.41.91.41.16</a><br>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-montepin/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                <a href="https://github.com/Aurelien24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+
+            </p>
+        </div>
+        <div>
+            <h2>Crédit</h2>
+                <p>
+                    <a href="https://fr.freepik.com/vecteurs-libre/illustration-concept-codage-main_21864184.htm#query=JAVA&position=3&from_view=search&track=sph">Image de storyset</a> sur Freepik<br>
+                    <a href="https://fr.freepik.com/vecteurs-libre/fusee-nombreuses-planetes-asteroides_16851464.htm#page=3&query=rocket&position=49&from_view=search&track=sph">Image de brgfx</a> sur Freepik<br>
+                    <a href="https://fr.freepik.com/vecteurs-libre/illustration-vectorielle-data-mining-concept-abstrait-examen-donnees-extraction-informations-sourcing-entrepot-informations-technique-collecte-recherche-modeles-ia-metaphore-abstraite-apprentissage-automatique_11669384.htm#query=SEARCH&position=11&from_view=search&track=sph">Image de vectorjuice</a> sur Freepik<br>
+                    <a href="https://www.flaticon.com/free-icon/books-stack-from-top-view_40529">Image de livres</a> sur flaticon<br>
+                    <a href="https://wall.alphacoders.com/big.php?i=608743&lang=French">Image de Skyrim</a> de Nexie
+                </p>
+        </div>
+    </footer>
+</body>
+</html>

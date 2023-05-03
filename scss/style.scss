@@ -1,0 +1,367 @@
+$bg-primary : whitesmoke;
+$bg-image : rgba(150, 150, 150, 0.6);
+
+body{
+
+    margin: 0px;
+    text-align: center;
+
+    nav{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        min-height: 50px;
+        width: 100%;
+
+        .portfolio{
+            height: min-content;
+        }
+
+        .menu-zone{
+
+            height: min-content;
+            margin: 10px;
+
+            /* Pour annimation du menu sur mobile */
+        
+
+            label{
+                content: "Menu ▼";
+            }
+
+            ul{
+                list-style-type: none;
+                padding-left: 0px;
+                margin: 0px;
+
+                .deroulant > p{
+                    border-bottom: 2px solid gold;
+                }
+            }
+
+            /* Permet l'annimation de déroullement */
+            .menu{
+                height : 0px;
+                
+                transition-property: height;
+                transition-duration: 2s;
+
+                overflow: hidden;
+            }
+
+            input[type=checkbox]:checked + .menu{
+                height: 258px;
+                
+            }
+        }
+    }
+
+}
+
+.paysage{
+
+
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(../images/fond-skyrim.webp);
+    height: 400px;
+
+    .logo-livre{
+        margin-top: 50px;
+        float: left;
+        /* Prévoir un ciel claire sur mobile, le paysage terestre n'apparais pas asser */
+        background-image: url(../images/books-stack-from-top-view-removebg-preview.webp);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.presentation
+{
+    
+    flex-direction: column;
+
+    .introduction{
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .bagage{
+        flex-direction: column;
+
+        div{
+            width: 80%;
+            flex-direction: column;
+
+            img{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.projets{
+    background-image: url(../images/image-de-presentation.bmp);
+    padding: 5vw;
+    div{
+        background: $bg-image;
+        padding: 5vw 0px 1px 0px;
+
+        div{
+            background: none;
+
+            div{
+                border: double gold;
+                width: 80vw;
+                margin: 10vw 5vw 10vw 5vw;
+    
+                .vignette{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        } 
+    }
+}
+
+#visionneuse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $bg-image;
+
+    position: fixed;
+    top: 0;
+	left: 0;
+
+    height: 0px;
+    overflow: hidden;
+
+    #coteMoins{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 52.5vh;
+        width: 8vw;
+    }
+
+    #cotePlus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 52.5vh;
+        width: 8vw;
+    }
+
+    button{
+        margin: 2vw;
+        height: 5vw;
+        width: 4vw;
+
+        svg{
+            height: 100%;
+        }
+    }
+
+    #ferme{
+        background-color: none;
+        height: 5vw;
+        margin-top: 2vw;
+    }
+
+
+    #divImgVisionne{
+        margin: 0px;
+        height: 100vh;
+        width: 84vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #imgVisionne{
+            max-width: 84vw;
+        }
+    }
+}
+
+.linkedin{
+background-image: url(../images/fond-3.jpg);
+}
+
+footer{
+    
+    flex-direction: column;
+
+    svg{
+        height: 40px;
+    }
+}
+
+.img-responsive{
+    height: 149px;
+    width: 150px;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.bg-color{
+    background-color: $bg-primary;
+}
+
+.bloc{
+    padding: 5vw;
+}
+
+.iframe-bloc{
+    height: 500px;
+}
+
+/* Fonction général */
+a{
+    text-decoration: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.iframe{
+    width: 90vw;
+}
+
+/* Classe unique */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.bg{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+@media screen and (min-width: 769px)
+{
+    .img-responsive{
+        height: 200px;
+        width: 200px;
+    }
+
+    nav{
+
+        justify-content: space-between;
+
+        .portfolio{
+            width: 100px;
+        }
+
+        .menu-zone{
+
+            width: 100%;
+
+            label{
+                display: none;
+            }
+
+            ul{
+                list-style-type: none;
+                padding-left: 0px;
+                margin: 0px;
+
+                .deroulant > p{
+                    border-bottom: 2px solid gold;
+                }
+            }
+
+            /* Permet l'annimation de déroullement */
+            #menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                height: 50px;
+                width: 100%;
+
+                overflow: visible;
+
+                .sous{
+                    height: 0px;
+                    overflow: hidden;
+
+                    li{
+                        margin: 5px;
+                    }
+                }
+
+                .deroulant:hover{
+                    background-color: gold;
+
+                    .sous{
+                        height: auto;
+                        background-color: $bg-primary;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .presentation > .bagage{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        div{
+            max-width: 500px;
+        }
+    }
+
+    .projets{
+        
+        padding: 2.5vw;
+
+        div{
+            div{
+                padding: 2.5vw 0px 1px 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                div{
+                    display: block;
+                    margin: 2vw;
+                    padding: 1vw;
+                    width: max-content;
+                    .vignette{
+                        height: 300px;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .flex-column-tel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

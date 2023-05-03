@@ -1,0 +1,228 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  text-align: center; }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    width: 100%; }
+    body nav .portfolio {
+      height: min-content; }
+    body nav .menu-zone {
+      height: min-content;
+      margin: 10px;
+      /* Pour annimation du menu sur mobile */
+      /* Permet l'annimation de déroullement */ }
+      body nav .menu-zone label {
+        content: "Menu ▼"; }
+      body nav .menu-zone ul {
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0px; }
+        body nav .menu-zone ul .deroulant > p {
+          border-bottom: 2px solid gold; }
+      body nav .menu-zone .menu {
+        height: 0px;
+        transition-property: height;
+        transition-duration: 2s;
+        overflow: hidden; }
+      body nav .menu-zone input[type=checkbox]:checked + .menu {
+        height: 258px; }
+
+.paysage {
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/fond-skyrim.webp);
+  height: 400px; }
+  .paysage .logo-livre {
+    margin-top: 50px;
+    float: left;
+    /* Prévoir un ciel claire sur mobile, le paysage terestre n'apparais pas asser */
+    background-image: url(../images/books-stack-from-top-view-removebg-preview.webp);
+    background-size: cover;
+    width: 50px;
+    height: 50px; }
+
+.presentation {
+  flex-direction: column; }
+  .presentation .introduction {
+    width: 90%;
+    margin-top: 40px; }
+  .presentation .bagage {
+    flex-direction: column; }
+    .presentation .bagage div {
+      width: 80%;
+      flex-direction: column; }
+      .presentation .bagage div img {
+        margin-top: 40px; }
+
+.projets {
+  background-image: url(../images/image-de-presentation.bmp);
+  padding: 5vw; }
+  .projets div {
+    background: rgba(150, 150, 150, 0.6);
+    padding: 5vw 0px 1px 0px; }
+    .projets div div {
+      background: none; }
+      .projets div div div {
+        border: double gold;
+        width: 80vw;
+        margin: 10vw 5vw 10vw 5vw; }
+        .projets div div div .vignette {
+          height: 200px;
+          width: 200px; }
+
+#visionneuse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(150, 150, 150, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0px;
+  overflow: hidden; }
+  #visionneuse #coteMoins {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 52.5vh;
+    width: 8vw; }
+  #visionneuse #cotePlus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 52.5vh;
+    width: 8vw; }
+  #visionneuse button {
+    margin: 2vw;
+    height: 5vw;
+    width: 4vw; }
+    #visionneuse button svg {
+      height: 100%; }
+  #visionneuse #ferme {
+    background-color: none;
+    height: 5vw;
+    margin-top: 2vw; }
+  #visionneuse #divImgVisionne {
+    margin: 0px;
+    height: 100vh;
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #visionneuse #divImgVisionne #imgVisionne {
+      max-width: 84vw; }
+
+.linkedin {
+  background-image: url(../images/fond-3.jpg); }
+
+footer {
+  flex-direction: column; }
+  footer svg {
+    height: 40px; }
+
+.img-responsive {
+  height: 149px;
+  width: 150px; }
+
+.italique {
+  font-style: italic; }
+
+.bg-color {
+  background-color: whitesmoke; }
+
+.bloc {
+  padding: 5vw; }
+
+.iframe-bloc {
+  height: 500px; }
+
+/* Fonction général */
+a {
+  text-decoration: none; }
+
+input[type=checkbox] {
+  display: none; }
+
+.iframe {
+  width: 90vw; }
+
+/* Classe unique */
+.flex {
+  display: flex;
+  align-items: center; }
+
+.bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+
+@media screen and (min-width: 769px) {
+  .img-responsive {
+    height: 200px;
+    width: 200px; }
+  nav {
+    justify-content: space-between; }
+    nav .portfolio {
+      width: 100px; }
+    nav .menu-zone {
+      width: 100%;
+      /* Permet l'annimation de déroullement */ }
+      nav .menu-zone label {
+        display: none; }
+      nav .menu-zone ul {
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0px; }
+        nav .menu-zone ul .deroulant > p {
+          border-bottom: 2px solid gold; }
+      nav .menu-zone #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+        width: 100%;
+        overflow: visible; }
+        nav .menu-zone #menu .sous {
+          height: 0px;
+          overflow: hidden; }
+          nav .menu-zone #menu .sous li {
+            margin: 5px; }
+        nav .menu-zone #menu .deroulant:hover {
+          background-color: gold; }
+          nav .menu-zone #menu .deroulant:hover .sous {
+            height: auto;
+            background-color: whitesmoke; }
+  .presentation > .bagage {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
+    .presentation > .bagage div {
+      max-width: 500px; }
+  .projets {
+    padding: 2.5vw; }
+    .projets div div {
+      padding: 2.5vw 0px 1px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .projets div div div {
+        display: block;
+        margin: 2vw;
+        padding: 1vw;
+        width: max-content; }
+        .projets div div div .vignette {
+          height: 300px;
+          width: 300px; }
+  footer {
+    width: 100%;
+    justify-content: space-around; }
+  .flex-column-tel {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
